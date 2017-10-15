@@ -1,0 +1,4 @@
+if [ ! -f target/simple_spark-1.0-SNAPSHOT-jar-with-dependencies.jar ]; then
+    mvn package
+fi
+java -jar target/simple_spark-1.0-SNAPSHOT-jar-with-dependencies.jar "$@"
